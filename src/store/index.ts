@@ -16,7 +16,7 @@ export default new Vuex.Store({
       "$secondary-text-color": "#757575",
       "$divider-color": "#BDBDBD"
     },
-    quizzes: quizz,
+    quizzes: quizz
   },
   mutations: {},
   actions: {},

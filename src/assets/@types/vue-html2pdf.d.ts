@@ -1,1 +1,1 @@
-declare module 'vue-html2pdf';
+declare module "vue-html2pdf";

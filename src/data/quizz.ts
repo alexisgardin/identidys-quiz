@@ -101,17 +101,17 @@ const quizz: Quiz = {
             "Son agitation / son impulsivité est présente sur la sphère privée (loisirs, activités quotidiennes) depuis plus de 6 mois.  ",
           id: 12,
           score: 0,
-          linkTo: 11,
+          linkTo: 11
         }
       ],
-      ranking: [11.25,9.75, 3],
+      ranking: [11.25, 9.75, 3],
       score: 0,
       disable: false
     },
     {
       name: "LANGAGE ORAL",
       image: require("@/assets/card/kid2.jpg"),
-      ranking: [6,11.50, 6.5],
+      ranking: [6, 11.5, 6.5],
       questions: [
         {
           responses: responses,
@@ -203,7 +203,7 @@ const quizz: Quiz = {
     {
       name: "LANGAGE ECRIT",
       image: require("@/assets/card/kid3.jpg"),
-      ranking: [10.5,9, 4.5],
+      ranking: [10.5, 9, 4.5],
       questions: [
         {
           responses: responses,
@@ -295,7 +295,7 @@ const quizz: Quiz = {
     {
       name: "MOTRICITE / REPERAGE SPATIAL",
       image: require("@/assets/card/kid4.jpg"),
-      ranking: [4,10, 10],
+      ranking: [4, 10, 10],
       questions: [
         {
           responses: responses,
@@ -388,81 +388,92 @@ const quizz: Quiz = {
     {
       name: "FONCTIONNEMENT EXÉCUTIF",
       image: require("@/assets/card/kid5.jpg"),
-      ranking: [7.25,9.25, 7.5],
+      ranking: [7.25, 9.25, 7.5],
       questions: [
         {
           responses: responses,
           question:
-              "Votre enfant a du mal à prendre appui sur les conseils qui lui sont donnés face à une situation problématique et persévère de manière démesurée dans ses erreurs.",
+            "Votre enfant a du mal à prendre appui sur les conseils qui lui sont donnés face à une situation problématique et persévère de manière démesurée dans ses erreurs.",
           id: 49,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant vous pose plusieurs fois les mêmes questions malgré le fait que vous y ayez déjà répondu ET/OU Il persévère en réalisant plusieurs fois la même action.",
+            "Votre enfant vous pose plusieurs fois les mêmes questions malgré le fait que vous y ayez déjà répondu ET/OU Il persévère en réalisant plusieurs fois la même action.",
           id: 50,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant ne peut s’empêcher de toucher ou de prendre les objets présents dans son environnement y compris si ces derniers",
+            "Votre enfant ne peut s’empêcher de toucher ou de prendre les objets présents dans son environnement y compris si ces derniers",
           id: 51,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant ne peut s’empêcher de régulièrement dévier sur un autre thème de conversation au fil de son discours.",
+            "Votre enfant ne peut s’empêcher de régulièrement dévier sur un autre thème de conversation au fil de son discours.",
           id: 52,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour élaborer différentes solutions face à une même situation problématique.",
+            "Votre enfant rencontre d’importantes difficultés pour élaborer différentes solutions face à une même situation problématique.",
           id: 53,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour envisager une même situation sous plusieurs points de vue.",
+            "Votre enfant rencontre d’importantes difficultés pour envisager une même situation sous plusieurs points de vue.",
           id: 54,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour retenir une longue consigne (il ne retient généralement que le début ou la fin).",
+            "Votre enfant rencontre d’importantes difficultés pour retenir une longue consigne (il ne retient généralement que le début ou la fin).",
           id: 55,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour les apprentissages par cœur (poésie, tables de multiplication...).",
+            "Votre enfant rencontre d’importantes difficultés pour les apprentissages par cœur (poésie, tables de multiplication...).",
           id: 56,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant semble rapidement oublier ce qui lui a été initialement demandé si un élément extérieur vient le perturber entre temps.",
+            "Votre enfant semble rapidement oublier ce qui lui a été initialement demandé si un élément extérieur vient le perturber entre temps.",
           id: 57,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour remplacer ou ajouter une information à son raisonnement sans en perdre",
+            "Votre enfant rencontre d’importantes difficultés pour remplacer ou ajouter une information à son raisonnement sans en perdre",
           id: 58,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant se montre passif face à des situations impliquant une prise de décision.",
+            "Votre enfant se montre passif face à des situations impliquant une prise de décision.",
           id: 59,
           score: 0
-        },        {
+        },
+        {
           responses: responses,
           question:
-              "Votre enfant rencontre d’importantes difficultés pour planifier ses activités (au regard des possibilités selon l’âge).",
+            "Votre enfant rencontre d’importantes difficultés pour planifier ses activités (au regard des possibilités selon l’âge).",
           id: 60,
           score: 0
-        },
+        }
       ],
       score: 0,
       disable: false

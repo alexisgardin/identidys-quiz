@@ -38,7 +38,9 @@
                     Votre enfant a un score de
                     <b>{{ data.subjects[n - 1].score }}</b>
                   </p>
-                  <p v-else style="color:red">Cette sphere ne peut être calculé</p>
+                  <p v-else style="color:red">
+                    Cette sphere ne peut être calculé
+                  </p>
                 </div>
               </v-col>
             </v-row>

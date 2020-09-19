@@ -10,7 +10,7 @@ export interface QuestionModel {
   responses: ResponseModel[];
   chosenResponse?: number;
   comment?: string;
-  linkTo?: number
+  linkTo?: number;
 }
 export interface Subject {
   name: string;

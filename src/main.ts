@@ -5,7 +5,7 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 
 import VueApexCharts from "vue-apexcharts";
-Vue.use( VueApexCharts);
+Vue.use(VueApexCharts);
 Vue.component("apexchart", VueApexCharts);
 new Vue({
   router,
