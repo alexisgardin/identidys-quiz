@@ -6,7 +6,7 @@
         :enable-download="true"
         :preview-modal="false"
         :paginate-elements-by-height="3000"
-        filename="hee hee"
+        filename="identidys_result"
         :pdf-quality="2"
         :manual-pagination="false"
         pdf-format="a4"
