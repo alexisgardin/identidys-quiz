@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import quizz from "@/data/quizz";
 Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
@@ -15,12 +16,7 @@ export default new Vuex.Store({
       "$secondary-text-color": "#757575",
       "$divider-color": "#BDBDBD"
     },
-    quizzes: {},
-    aws: {
-      questions: {},
-      quiz: {},
-      title: ""
-    }
+    quizzes: quizz,
   },
   mutations: {},
   actions: {},

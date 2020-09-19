@@ -1,24 +1,8 @@
-# admin-app
+# Idenditys Online Quiz
+[![Build Status](https://travis-ci.org/alexisgardin/vuetify-form-generator.svg?branch=master)](https://travis-ci.org/alexisgardin/vuetify-form-generator)
 
-## Project setup
-```
-npm install
-```
+![](./src/assets/logo.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Link : https://alexisgardin.github.io/identidys-quiz/#/home

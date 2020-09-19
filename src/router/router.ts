@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Layout from "@/components/layout/Layout.vue";
 import Home from "@/components/Home.vue";
 import QuizComponent from "@/components/QuizComponent.vue";
+import Result from "@/components/Result.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,16 +14,21 @@ const routes = [
     redirect: "/home",
     children: [
       {
-        path: "home",
+        path: "/home",
         name: "Home",
         component: Home
       },
       {
-        path: "quiz",
-        name: "QUIZ",
+        path: "/quiz",
+        name: "Quiz",
         component: QuizComponent
-      }
+      },
     ]
+  },
+  {
+    path: "/result",
+    name: "result",
+    component: Result
   }
   /** {
     path: "/about",

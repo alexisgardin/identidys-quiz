@@ -8,13 +8,17 @@ export interface QuestionModel {
   score: number;
   question: string;
   responses: ResponseModel[];
-  chosenResponse?: string;
+  chosenResponse?: number;
   comment?: string;
+  linkTo?: number
 }
 export interface Subject {
   name: string;
   image: any;
+  ranking: number[];
+  score: number;
   questions: QuestionModel[];
+  disable: boolean;
 }
 
 export interface Quiz {
