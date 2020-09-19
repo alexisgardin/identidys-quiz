@@ -10,7 +10,7 @@
         dark
         elevation="8"
         @click="goToTest"
-        >Démarrer le test
+        >Démarrer le questionnaire
       </v-btn>
     </v-col>
   </v-row>
