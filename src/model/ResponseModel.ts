@@ -19,6 +19,7 @@ export interface Subject {
   score: number;
   questions: QuestionModel[];
   disable: boolean;
+  counterError: 0; //Certaine question ne sont pas valide si d'autre sont coché, ceci est un workaround
 }
 
 export interface Quiz {

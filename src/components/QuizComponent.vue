@@ -94,9 +94,6 @@ import { Quiz, Subject } from "@/model/ResponseModel";
   // Toutes les options de composant sont autorisées ici.
 })
 export default class QuizComponent extends Vue {
-  show = false;
-  image = require("@/assets/logo_big.png");
-
   data: Quiz = this.$store.state.quizzes;
 
   computeNumberOfResponse(subject: Subject) {
@@ -129,10 +126,15 @@ export default class QuizComponent extends Vue {
         if (question.chosenResponse) {
           if (question.linkTo) {
             const link = subject.questions.find(v => question.linkTo === v.id);
-            subject.disable = question.chosenResponse !== link!.chosenResponse;
+            if (question.chosenResponse !== link!.chosenResponse) {
+              subject.counterError++;
+            }
           }
           subject.score += question.chosenResponse;
-        } else continue;
+        }
+      }
+      if (subject.counterError === 4) {
+        subject.disable = true;
       }
     }
     this.$router.push("result");

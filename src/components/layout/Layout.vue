@@ -4,7 +4,7 @@
       <v-container fluid align="start">
         <v-row align="center" justify="center">
           <v-col cols="12" sm="12" align="center">
-            <v-img :src="image" max-width="800px"></v-img>
+            <v-img :src="image" max-width="300px"></v-img>
           </v-col>
           <router-view style="max-width: 100vw" class="view one" />
         </v-row>
@@ -21,6 +21,6 @@ import Component from "vue-class-component";
   // Toutes les options de composant sont autorisées ici.
 })
 export default class Layout extends Vue {
-  image = require("@/assets/logo_big.png");
+  image = require("@/assets/logo.png");
 }
 </script>

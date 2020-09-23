@@ -101,7 +101,6 @@ import Component from "vue-class-component";
   // Toutes les options de composant sont autorisées ici.
 })
 export default class Home extends Vue {
-  image = require("@/assets/logo_big.png");
 
   goToTest() {
     this.$router.push("quiz");

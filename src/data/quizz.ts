@@ -106,7 +106,8 @@ const quizz: Quiz = {
       ],
       ranking: [11.25, 9.75, 3],
       score: 0,
-      disable: false
+      disable: false,
+      counterError: 0
     },
     {
       name: "LANGAGE ORAL",
@@ -198,7 +199,8 @@ const quizz: Quiz = {
         }
       ],
       score: 0,
-      disable: false
+      disable: false,
+      counterError: 0
     },
     {
       name: "LANGAGE ECRIT",
@@ -290,7 +292,8 @@ const quizz: Quiz = {
         }
       ],
       score: 0,
-      disable: false
+      disable: false,
+      counterError: 0
     },
     {
       name: "MOTRICITE / REPERAGE SPATIAL",
@@ -383,7 +386,8 @@ const quizz: Quiz = {
         }
       ],
       score: 0,
-      disable: false
+      disable: false,
+      counterError: 0
     },
     {
       name: "FONCTIONNEMENT EXÉCUTIF",
@@ -476,7 +480,8 @@ const quizz: Quiz = {
         }
       ],
       score: 0,
-      disable: false
+      disable: false,
+      counterError: 0
     }
   ]
 };
