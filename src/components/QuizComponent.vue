@@ -128,13 +128,13 @@ export default class QuizComponent extends Vue {
             const link = subject.questions.find(v => question.linkTo === v.id);
             if (question.chosenResponse !== link!.chosenResponse) {
               subject.counterError++;
+              if (subject.counterError === 4) {
+                subject.disable = true;
+              }
             }
           }
           subject.score += question.chosenResponse;
         }
-      }
-      if (subject.counterError === 4) {
-        subject.disable = true;
       }
     }
     this.$router.push("result");
