@@ -44,8 +44,5 @@ export default class Layout extends Vue {
     }
   ];
 
-  open(link: string) {
-    window.open(link, "_blank");
-  }
 }
 </script>

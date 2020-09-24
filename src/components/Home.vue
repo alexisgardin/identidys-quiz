@@ -137,5 +137,8 @@ export default class Home extends Vue {
       color: "primary"
     }
   ];
+  open(link: string) {
+    window.open(link, "_blank");
+  }
 }
 </script>
