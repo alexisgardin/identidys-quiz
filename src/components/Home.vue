@@ -12,6 +12,21 @@
         @click="goToTest"
         >Démarrer le questionnaire
       </v-btn>
+
+
+    </v-col>
+
+    <v-col cols="12" sm="12" align="center">
+    <v-btn
+            v-for="icon in icons"
+            :key="icon.icon"
+            class="mx-4"
+            icon
+            @click="open(icon.link)"
+            :color="icon.color"
+    >
+      <v-icon size="30px">{{ icon.icon }}</v-icon>
+    </v-btn>
     </v-col>
   </v-row>
 </template>
@@ -101,9 +116,26 @@ import Component from "vue-class-component";
   // Toutes les options de composant sont autorisées ici.
 })
 export default class Home extends Vue {
-
   goToTest() {
     this.$router.push("quiz");
   }
+
+  icons = [
+    {
+      icon: "mdi-instagram",
+      link: "https://www.instagram.com/identidys_echelle_reperage_dys/?hl=fr-ca",
+      color: "indigo"
+    },
+    {
+      icon: "mdi-youtube",
+      link: "https://www.youtube.com/channel/UCvFJprs2zEJPLu2vNuUkFcw",
+      color: "red"
+    },
+    {
+      icon: "mdi-web",
+      link: "https://www.identidys.com/",
+      color: "primary"
+    }
+  ];
 }
 </script>
