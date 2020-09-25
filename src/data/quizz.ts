@@ -13,6 +13,7 @@ const quizz: Quiz = {
   subjects: [
     {
       name: "ATTENTION / CONCENTRATION",
+      id:1,
       image: require("@/assets/card/kid1.jpg"),
       questions: [
         {
@@ -42,7 +43,6 @@ const quizz: Quiz = {
             "Les difficultés attentionnelles sont observées dans la sphère scolaire (école et devoirs). ",
           id: 4,
           score: 0,
-          linkTo: 5
         },
         {
           responses: responses,
@@ -50,7 +50,6 @@ const quizz: Quiz = {
             "Les difficultés attentionnelles sont observées dans la sphère privée (loisirs, activités quotidiennes). ",
           id: 5,
           score: 0,
-          linkTo: 4
         },
         {
           responses: responses,
@@ -93,7 +92,6 @@ const quizz: Quiz = {
             "Son agitation / son impulsivité est présente sur la sphère scolaire (Ecole et devoirs) depuis plus de 6 mois.",
           id: 11,
           score: 0,
-          linkTo: 12
         },
         {
           responses: responses,
@@ -101,7 +99,6 @@ const quizz: Quiz = {
             "Son agitation / son impulsivité est présente sur la sphère privée (loisirs, activités quotidiennes) depuis plus de 6 mois.  ",
           id: 12,
           score: 0,
-          linkTo: 11
         }
       ],
       ranking: [11.25, 9.75, 3],
@@ -110,6 +107,7 @@ const quizz: Quiz = {
       counterError: 0
     },
     {
+      id:2,
       name: "LANGAGE ORAL",
       image: require("@/assets/card/kid2.jpg"),
       ranking: [6, 11.5, 6.5],
@@ -203,6 +201,7 @@ const quizz: Quiz = {
       counterError: 0
     },
     {
+      id:3,
       name: "LANGAGE ECRIT",
       image: require("@/assets/card/kid3.jpg"),
       ranking: [10.5, 9, 4.5],
@@ -296,6 +295,7 @@ const quizz: Quiz = {
       counterError: 0
     },
     {
+      id:4,
       name: "MOTRICITE / REPERAGE SPATIAL",
       image: require("@/assets/card/kid4.jpg"),
       ranking: [4, 10, 10],
@@ -390,6 +390,7 @@ const quizz: Quiz = {
       counterError: 0
     },
     {
+      id:5,
       name: "FONCTIONNEMENT EXÉCUTIF",
       image: require("@/assets/card/kid5.jpg"),
       ranking: [7.25, 9.25, 7.5],

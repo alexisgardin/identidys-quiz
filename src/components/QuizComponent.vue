@@ -73,7 +73,7 @@
       <v-btn
         rounded
         width="250"
-        :disabled="!allRespond()"
+        :disabled="allRespond()"
         height="50"
         color="primary"
         elevation="8"
@@ -121,20 +121,35 @@ export default class QuizComponent extends Vue {
 
   goToResult() {
     //Compute score
+    const exceptionQuestion = [
+      { q1: 4, q2: 5 },
+      { q1: 11, q2: 12 }
+    ];
     for (const subject of this.data.subjects) {
+      subject.score = 0; // if the user came back
       for (const question of subject.questions) {
         if (question.chosenResponse) {
-          if (question.linkTo) {
-            const link = subject.questions.find(v => question.linkTo === v.id);
-            if (question.chosenResponse !== link!.chosenResponse) {
-              subject.counterError++;
-              if (subject.counterError === 4) {
-                subject.disable = true;
-              }
-            }
-          }
           subject.score += question.chosenResponse;
         }
+      }
+    }
+    //Special case
+    const find = this.data.subjects.find(v => v.id === 1);
+    if (find) {
+      for (const exceptionQuestionElement of exceptionQuestion) {
+        const q1 = find.questions.find(
+          v => v.id === exceptionQuestionElement.q1
+        );
+        const q2 = find.questions.find(
+          v => v.id === exceptionQuestionElement.q2
+        );
+        console.log(q1, q2);
+        if (q1 && q2 && (q1.chosenResponse != 2 || q2.chosenResponse != 2)) {
+          find.counterError++;
+        }
+      }
+      if (find.counterError > 1) {
+        find.disable = true;
       }
     }
     this.$router.push("result");

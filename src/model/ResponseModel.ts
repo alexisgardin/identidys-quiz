@@ -10,9 +10,9 @@ export interface QuestionModel {
   responses: ResponseModel[];
   chosenResponse?: number;
   comment?: string;
-  linkTo?: number;
 }
 export interface Subject {
+  id: number;
   name: string;
   image: any;
   ranking: number[];

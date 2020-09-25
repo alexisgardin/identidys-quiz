@@ -53,7 +53,7 @@
                     >
                   </p>
                   <p v-else style="color:red">
-                    Cette sphere ne peut être calculé
+                    Cette sphère ne peut être calcuée
                   </p>
                 </div>
               </v-col>
@@ -296,7 +296,11 @@ export default class Result extends Vue {
         }
       ]);
       const color = this.computeColor(subject.ranking, subject.score);
-      color.sub.push(subject.name);
+      if (subject.disable) {
+        this.dataResult[0].sub.push(subject.name);
+      } else {
+        color.sub.push(subject.name);
+      }
     }
   }
 
