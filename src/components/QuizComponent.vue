@@ -143,7 +143,6 @@ export default class QuizComponent extends Vue {
         const q2 = find.questions.find(
           v => v.id === exceptionQuestionElement.q2
         );
-        console.log(q1, q2);
         if (q1 && q2 && (q1.chosenResponse != 2 || q2.chosenResponse != 2)) {
           find.counterError++;
         }
