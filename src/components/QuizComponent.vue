@@ -73,7 +73,7 @@
       <v-btn
         rounded
         width="250"
-        :disabled="allRespond()"
+        :disabled="!allRespond()"
         height="50"
         color="primary"
         elevation="8"
