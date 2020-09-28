@@ -10,15 +10,64 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-footer  padless>
+    <v-footer padless>
       <v-card flat tile class=" lighten-1 text-center" style="width: 100vw">
         <v-card-text>
-          {{ new Date().getFullYear() }} — <strong>Identidys Online est la version numérique du questionnaire disponible sur <a href="https://www.identidys.com" target="_blank">identidys.fr</a> </strong>
+          {{ new Date().getFullYear() }} —
+          <strong
+            >Identidys Online est la version numérique du questionnaire
+            disponible sur
+            <a href="https://www.identidys.com" target="_blank">identidys.fr</a>
+          </strong>
         </v-card-text>
       </v-card>
     </v-footer>
   </v-app>
 </template>
+<style lang="scss">
+.v-application {
+  h1 {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 26.4px;
+  }
+  h3 {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+  }
+  p {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 20px;
+  }
+  blockquote {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  pre {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+  }
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
@@ -44,5 +93,11 @@ export default class Layout extends Vue {
     }
   ];
 
+  mounted() {
+    const item = localStorage.getItem("data");
+    if (!item) {
+      localStorage.setItem("data", JSON.stringify([]));
+    }
+  }
 }
 </script>

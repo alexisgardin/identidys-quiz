@@ -27,7 +27,10 @@
           <section class="pdf-item">
             <v-row justify="center" align="center" class="pa-0">
               <v-col cols="12" align="center" class="pa-0">
-                <div
+                <v-card
+                        class="mx-auto"
+                        elevation="6"
+                        style="padding: 5px; margin: 10px"
                   v-for="n of chartOptions.length"
                   id="chart"
                   v-bind:key="n"
@@ -53,9 +56,9 @@
                     >
                   </p>
                   <p v-else style="color:red">
-                    Cette sphère ne peut être calcuée
+                    Cette sphère ne peut être calculée
                   </p>
-                </div>
+                </v-card>
               </v-col>
             </v-row>
             <v-divider style="margin: 15px 0px 15px 0px"></v-divider>

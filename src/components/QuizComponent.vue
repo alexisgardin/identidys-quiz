@@ -151,6 +151,17 @@ export default class QuizComponent extends Vue {
         find.disable = true;
       }
     }
+    const item = localStorage.getItem("data");
+    if (item) {
+      const parse = JSON.parse(item) as any[];
+      const data = {
+        data: this.data,
+        date: Date.now(),
+        id: parse.length + 1
+      } as any;
+      parse.push(data);
+      localStorage.setItem("data", JSON.stringify(parse));
+    }
     this.$router.push("result");
   }
 }

@@ -12,21 +12,55 @@
         @click="goToTest"
         >Démarrer le questionnaire
       </v-btn>
-
-
     </v-col>
 
     <v-col cols="12" sm="12" align="center">
-    <v-btn
-            v-for="icon in icons"
-            :key="icon.icon"
-            class="mx-4"
-            icon
-            @click="open(icon.link)"
-            :color="icon.color"
-    >
-      <v-icon size="30px">{{ icon.icon }}</v-icon>
-    </v-btn>
+      <v-btn
+        v-for="icon in icons"
+        :key="icon.icon"
+        class="mx-4"
+        icon
+        @click="open(icon.link)"
+        :color="icon.color"
+      >
+        <v-icon size="30px">{{ icon.icon }}</v-icon>
+      </v-btn>
+    </v-col>
+
+    <v-col cols="12" sm="12" lg="5" md="6" align="center"
+           v-if="values.length > 0">
+      <v-data-table
+        :headers="headers"
+        :items="values"
+        class="elevation-1"
+      >
+        <template v-slot:item.date="{ item }">
+          <span>{{ new Date(item.date).toLocaleString() }}</span>
+        </template>
+        <template v-slot:item.actions="{ item }">
+          <v-btn
+            color="primary"
+            rounded
+            small
+            class="mr-2"
+            @click="setResult(item)"
+          >
+            Voir résultat
+          </v-btn>
+        </template>
+      </v-data-table>
+
+      <v-btn
+        color="primary"
+        small
+        elevation="8"
+        fab
+        dark
+        class="ma-4"
+        @click="reset"
+      >
+        <v-icon>mdi-reload</v-icon>
+      </v-btn>
     </v-col>
   </v-row>
 </template>
@@ -119,11 +153,21 @@ export default class Home extends Vue {
   goToTest() {
     this.$router.push("quiz");
   }
-
+  headers = [
+    {
+      text: "N°",
+      align: "start",
+      value: "id"
+    },
+    { text: "Date", value: "date" },
+    { text: "Résultat", value: "actions", sortable: false }
+  ];
+  values = [];
   icons = [
     {
       icon: "mdi-instagram",
-      link: "https://www.instagram.com/identidys_echelle_reperage_dys/?hl=fr-ca",
+      link:
+        "https://www.instagram.com/identidys_echelle_reperage_dys/?hl=fr-ca",
       color: "indigo"
     },
     {
@@ -139,6 +183,22 @@ export default class Home extends Vue {
   ];
   open(link: string) {
     window.open(link, "_blank");
+  }
+
+  mounted() {
+    const item = localStorage.getItem("data");
+    if (item) {
+      this.values = JSON.parse(item);
+    }
+  }
+  reset() {
+    localStorage.setItem("data", JSON.stringify([]));
+    this.values = [];
+  }
+
+  setResult(item: any) {
+    this.$store.state.quizzes = item.data;
+    this.$router.push("result");
   }
 }
 </script>
