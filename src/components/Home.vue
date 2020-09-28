@@ -1,5 +1,16 @@
 <template>
   <v-row justify="center" align="center">
+    <v-col cols="12" sm="12" lg="5" md="6" align="center">
+      <h4 class="mb-5">
+        Dites (par rapport à ce que vous pouvez observer chez votre enfant), si
+        les situations rapportées se rencontrent :
+      </h4>
+      <p><strong style="font-weight:800">Oui</strong> - Très souvent</p>
+      <p><strong style="font-weight:800">Rarement</strong> - Situations anecdotiques</p>
+      <p><strong style="font-weight:800">Non</strong>- Jamais</p>
+      <p>Ps. Vous êtes également libre d’y associer des commentaires afin de
+        préciser vos réponses.</p>
+    </v-col>
     <v-col cols="12" sm="12" align="center">
       <v-btn
         class="heartbeat"
@@ -27,13 +38,15 @@
       </v-btn>
     </v-col>
 
-    <v-col cols="12" sm="12" lg="5" md="6" align="center"
-           v-if="values.length > 0">
-      <v-data-table
-        :headers="headers"
-        :items="values"
-        class="elevation-1"
-      >
+    <v-col
+      cols="12"
+      sm="12"
+      lg="5"
+      md="6"
+      align="center"
+      v-if="values.length > 0"
+    >
+      <v-data-table :headers="headers" :items="values" class="elevation-1">
         <template v-slot:item.date="{ item }">
           <span>{{ new Date(item.date).toLocaleString() }}</span>
         </template>
