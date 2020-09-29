@@ -26,42 +26,42 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant est facilement distrait par ce qui peut se passer autour de lui. ",
+            "Votre enfant est facilement distrait par ce qui peut se passer autour de lui.",
           id: 2,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant oublie fréquemment certaines choses de la vie quotidienne (consignes, cahiers, clefs...) ET/OU Il perd régulièrement des objets ou des affaires nécessaires à son travail ou à ses activités (sac, trousse, portable...). ",
+            "Votre enfant oublie fréquemment certaines choses de la vie quotidienne (consignes, cahiers, clefs...) ET/OU Il perd régulièrement des objets ou des affaires nécessaires à son travail ou à ses activités (sac, trousse, portable...).",
           id: 3,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Les difficultés attentionnelles sont observées dans la sphère scolaire (école et devoirs). ",
+            "Les difficultés attentionnelles sont observées dans la sphère scolaire (école et devoirs).",
           id: 4,
           score: 0,
         },
         {
           responses: responses,
           question:
-            "Les difficultés attentionnelles sont observées dans la sphère privée (loisirs, activités quotidiennes). ",
+            "Les difficultés attentionnelles sont observées dans la sphère privée (loisirs, activités quotidiennes).",
           id: 5,
           score: 0,
         },
         {
           responses: responses,
           question:
-            "Les difficultés attentionnelles sont présentes depuis plus de 6 mois. ",
+            "Les difficultés attentionnelles sont présentes depuis plus de 6 mois.",
           id: 6,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés à attendre son tour (tour de parole, self-service, cantine, jeux de société...). ",
+            "Votre enfant a des difficultés à attendre son tour (tour de parole, self-service, cantine, jeux de société...).",
           id: 7,
           score: 0
         },
@@ -75,14 +75,14 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant a tendance à agir plus vite qu’il ne réfléchit, il répond aux questions avant qu’elles soient complètement posées.   ",
+            "Votre enfant a tendance à agir plus vite qu’il ne réfléchit, il répond aux questions avant qu’elles soient complètement posées.",
           id: 9,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a du mal à aller se coucher ou s’endormir à cause de son agitation / excitation ET/OU  Il ne semble jamais être fatigué et manifeste régulièrement le besoin d’être en activité (y compris lors des repas). ",
+            "Votre enfant a du mal à aller se coucher ou s’endormir à cause de son agitation / excitation ET/OU  Il ne semble jamais être fatigué et manifeste régulièrement le besoin d’être en activité (y compris lors des repas).",
           id: 10,
           score: 0
         },
@@ -96,7 +96,7 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Son agitation / son impulsivité est présente sur la sphère privée (loisirs, activités quotidiennes) depuis plus de 6 mois.  ",
+            "Son agitation / son impulsivité est présente sur la sphère privée (loisirs, activités quotidiennes) depuis plus de 6 mois.",
           id: 12,
           score: 0,
         }
@@ -115,62 +115,62 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés pour comprendre le sens des conversations. ",
+            "Votre enfant a des difficultés pour comprendre le sens des conversations.",
           id: 13,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés pour trouver les mots justes (manque du mot). ",
+            "Votre enfant montre des difficultés pour trouver les mots justes (manque du mot).",
           id: 14,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés pour résumer ou raconter une histoire de manière cohérente. ",
+            "Votre enfant a des difficultés pour résumer ou raconter une histoire de manière cohérente.",
           id: 15,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés pour s’exprimer (on ne le comprend pas toujours). ",
+            "Votre enfant montre des difficultés pour s’exprimer (on ne le comprend pas toujours).",
           id: 16,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant parvient davantage à réaliser ses exercices lorsque qu’on lui reformule les consignes. ",
+            "Votre enfant parvient davantage à réaliser ses exercices lorsque qu’on lui reformule les consignes.",
           id: 17,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés pour structurer correctement ses phrases. ",
+            "Votre enfant a des difficultés pour structurer correctement ses phrases.",
           id: 18,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Le langage a mis du temps à se mettre en place (Votre enfant ne faisait pas de phrase à l’entrée en Maternelle ET/OU on ne le comprenait pas). ",
+            "Le langage a mis du temps à se mettre en place (Votre enfant ne faisait pas de phrase à l’entrée en Maternelle ET/OU on ne le comprenait pas).",
           id: 19,
           score: 0
         },
         {
           responses: responses,
-          question: "Votre enfant n’a pas un vocabulaire étendu. ",
+          question: "Votre enfant n’a pas un vocabulaire étendu.",
           id: 20,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés pour conjuguer les verbes. ",
+            "Votre enfant a des difficultés pour conjuguer les verbes.",
           id: 21,
           score: 0
         },
@@ -184,14 +184,14 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant était colérique ou pleurait souvent dans la petite enfance. ",
+            "Votre enfant était colérique ou pleurait souvent dans la petite enfance.",
           id: 23,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a tendance à procéder par mimétisme en classe (à se calquer sur ce que font les autres).  ",
+            "Votre enfant a tendance à procéder par mimétisme en classe (à se calquer sur ce que font les autres).",
           id: 24,
           score: 0
         }
@@ -209,56 +209,56 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés pour comprendre ce qu’il lit. ",
+            "Votre enfant montre des difficultés pour comprendre ce qu’il lit.",
           id: 25,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Il est régulièrement nécessaire de lui reformuler ou de lui lire les consignes. ",
+            "Il est régulièrement nécessaire de lui reformuler ou de lui lire les consignes.",
           id: 26,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant parvient davantage à réaliser ses exercices lorsque qu’on lui reformule les consignes. ",
+            "Votre enfant parvient davantage à réaliser ses exercices lorsque qu’on lui reformule les consignes.",
           id: 27,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre d’importantes difficultés pour apprendre ses tables de multiplication. ",
+            "Votre enfant montre d’importantes difficultés pour apprendre ses tables de multiplication.",
           id: 28,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Il faut régulièrement insister sur cet apprentissage mais dès le lendemain il oublie ce qu’il a appris la veille. ",
+            "Il faut régulièrement insister sur cet apprentissage mais dès le lendemain il oublie ce qu’il a appris la veille.",
           id: 29,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant se montre lent dans l’activité de copie (au tableau) ou lors de la prise de notes. ",
+            "Votre enfant se montre lent dans l’activité de copie (au tableau) ou lors de la prise de notes.",
           id: 30,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant fait de nombreuses fautes d’orthographe, et peut écrire un même mot de différentes manières. ",
+            "Votre enfant fait de nombreuses fautes d’orthographe, et peut écrire un même mot de différentes manières.",
           id: 31,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés en écriture (mauvaise qualité) mais parvient à écrire correctement lorsqu’on lui laisse le temps. ",
+            "Votre enfant a des difficultés en écriture (mauvaise qualité) mais parvient à écrire correctement lorsqu’on lui laisse le temps.",
           id: 32,
           score: 0
         },
@@ -271,21 +271,21 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant ne parvient pas bien à se repérer dans le temps (gestion du temps qui passe, confond les jours, les mois). ",
+            "Votre enfant ne parvient pas bien à se repérer dans le temps (gestion du temps qui passe, confond les jours, les mois).",
           id: 34,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant ne parvient pas à prendre ses cours en entier. ",
+            "Votre enfant ne parvient pas à prendre ses cours en entier.",
           id: 35,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant ne parvient pas à relire ses cours car la qualité graphique est très mauvaise. ",
+            "Votre enfant ne parvient pas à relire ses cours car la qualité graphique est très mauvaise.",
           id: 36,
           score: 0
         }
@@ -303,63 +303,63 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés en géométrie (repérage dans l’espace ou manque de précision). ",
+            "Votre enfant a des difficultés en géométrie (repérage dans l’espace ou manque de précision).",
           id: 37,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés en Mathématiques (pose d’opérations, lecture d’un tableau à double entrées). ",
+            "Votre enfant a des difficultés en Mathématiques (pose d’opérations, lecture d’un tableau à double entrées).",
           id: 38,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés dans les activités sportives (demandant de l’équilibre et une bonne coordination). ",
+            "Votre enfant a des difficultés dans les activités sportives (demandant de l’équilibre et une bonne coordination).",
           id: 39,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés dans l’utilisation de certains outils scolaires (compas, règles...). ",
+            "Votre enfant montre des difficultés dans l’utilisation de certains outils scolaires (compas, règles...).",
           id: 40,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés dans l’utilisation de certains outils au quotidien (couteau, fourchettes, bouteille...). ",
+            "Votre enfant montre des difficultés dans l’utilisation de certains outils au quotidien (couteau, fourchettes, bouteille...).",
           id: 41,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant est maladroit lorsqu’il aide à la maison (se cogne, renverse les objets). ",
+            "Votre enfant est maladroit lorsqu’il aide à la maison (se cogne, renverse les objets).",
           id: 42,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant a des difficultés en écriture (mauvaise qualité) et ne parvient pas à écrire correctement y compris lorsqu’on lui laisse le temps. ",
+            "Votre enfant a des difficultés en écriture (mauvaise qualité) et ne parvient pas à écrire correctement y compris lorsqu’on lui laisse le temps.",
           id: 43,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés en motricité fine (faire ses lacets, boutonner, colorier, découper...). ",
+            "Votre enfant montre des difficultés en motricité fine (faire ses lacets, boutonner, colorier, découper...).",
           id: 44,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés en motricité globale (courir, sauter, activités sportives...). ",
+            "Votre enfant montre des difficultés en motricité globale (courir, sauter, activités sportives...).",
           id: 45,
           score: 0
         },
@@ -373,14 +373,14 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant ne parvient pas bien à se repérer dans l’espace (perte de repère dans un lieu connu). ",
+            "Votre enfant ne parvient pas bien à se repérer dans l’espace (perte de repère dans un lieu connu).",
           id: 47,
           score: 0
         },
         {
           responses: responses,
           question:
-            "Votre enfant montre des difficultés dans l’habillage (orientation des vêtements, aisance...). ",
+            "Votre enfant montre des difficultés dans l’habillage (orientation des vêtements, aisance...).",
           id: 48,
           score: 0
         }
@@ -412,7 +412,7 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant ne peut s’empêcher de toucher ou de prendre les objets présents dans son environnement y compris si ces derniers",
+            "Votre enfant ne peut s’empêcher de toucher ou de prendre les objets présents dans son environnement y compris si ces derniers ne sont pas à sa portée.",
           id: 51,
           score: 0
         },
@@ -461,7 +461,7 @@ const quizz: Quiz = {
         {
           responses: responses,
           question:
-            "Votre enfant rencontre d’importantes difficultés pour remplacer ou ajouter une information à son raisonnement sans en perdre",
+            "Votre enfant rencontre d’importantes difficultés pour remplacer ou ajouter une information à son raisonnement sans en perdre le fil.",
           id: 58,
           score: 0
         },
