@@ -40,7 +40,7 @@
               auto-grow
               outlined
               color="primary"
-              label="Information additionnel"
+              label="Information additionnelle"
               placeholder="Falcultatif"
               rows="3"
             ></v-textarea>
